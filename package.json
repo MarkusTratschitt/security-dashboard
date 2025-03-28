@@ -10,8 +10,14 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.10.1",
+    "less": "^4.2.2",
+    "less-loader": "^12.2.0",
     "nuxt": "^3.16.1",
+    "pug": "^3.0.3",
+    "pug-plain-loader": "^1.1.0",
     "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+    "vue-router": "^4.5.0",
+    "vuetify": "^3.7.19"
   }
 }
