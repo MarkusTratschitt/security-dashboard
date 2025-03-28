@@ -1,6 +1,6 @@
 <template lang="pug">
 v-container
-  h1 Dashboard – Netzwerkereignisse
+  h1 Dashboard – Security Events
   v-row(v-for="event in eventStore.events" :key="event.id")
     v-col(cols="12")
       v-card.mb-3
