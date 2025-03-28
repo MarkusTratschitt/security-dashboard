@@ -19,8 +19,6 @@ export default defineComponent({
   name: 'DefaultLayout',
   data() {
     return {
-      route: useRoute(),
-      router: useRouter(),
       username: 'admin' // später dynamisch aus Store
     }
   },
@@ -31,12 +29,12 @@ export default defineComponent({
         '/dashboard': 'Dashboard',
         '/about': 'Über das Projekt'
       }
-      return map[this.route.path] || 'Unbekannte Seite'
+      return map[this.$route.path] || 'Unbekannte Seite'
     }
   },
   methods: {
     goTo(route: string) {
-      this.router.push('/' + route)
+      this.$router.push('/' + route)
     }
   }
 })
